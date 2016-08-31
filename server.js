@@ -19,10 +19,10 @@ var port = process.env.PORT || 8000;
 
 // get all data/stuff of the body (post) parameters
 // parse application/json
-app.user(bodyParser.json());
+app.use(bodyParser.json());
 
 // parse application/vnd.api as JSON
-app.user(bodyParser.json({ type: 'application/vnd.api+json' }));
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // override with the X-HTTP-Method-Override header in the request. Simulate DELETE/PUT
 app.use(methodOverride('X-HTTP-Method-Override'));
