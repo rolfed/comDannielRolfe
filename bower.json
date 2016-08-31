@@ -1,0 +1,23 @@
+{
+  "name": "dannielrolfeportfolio",
+  "description": "Danniel Rolfe is a creative front-end developer based in Portland, Oregon.",
+  "main": "server.js",
+  "authors": [
+    "Danniel Rolfe"
+  ],
+  "directory": "public/libs",
+  "license": "MIT",
+  "homepage": "http://www.dannielrolfe.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gsap": "^1.19.0"
+  }
+}
