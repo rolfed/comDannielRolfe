@@ -22,6 +22,7 @@
     "jquery": "^3.1.0",
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
-    "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "modular-scale": "^2.1.3"
   }
 }

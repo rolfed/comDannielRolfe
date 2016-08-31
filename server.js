@@ -38,7 +38,7 @@ require('./app/routes')(app); // configure our routes
 app.listen(port);
 
 // shoutout to the user
-console.log('App is running on port ' + port + 'To terminate session type Ctrl-C');
+console.log('App is running on port ' + port + ' To terminate session type Ctrl-C');
 
 // expose app
 exports = module.export = app;
