@@ -1,0 +1,30 @@
+.list-right {
+   li {
+      float: right;
+      margin: 0.2em;
+   }
+
+}
+.icon-padding {
+  ul {
+    padding: 1.2em;
+  }
+}
+.list-center {
+      margin: 0 auto;
+      display: inline-block;
+}
+.list-hover {
+    a {
+      padding: 0.5em;
+    }
+    a:hover,
+   :focus {
+      border: solid 0px $black;
+      border-radius: 5px;
+      background: #000;
+      color: #ffde17;
+      height: 20px;
+      width: 20px;
+  }
+}

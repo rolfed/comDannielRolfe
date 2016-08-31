@@ -1,0 +1,14 @@
+.portfolio-wrapper {
+    padding: 2em;
+    margin-bottom: 2em;
+
+    img {
+    	border: solid 4px $black;
+    	border-radius: 2em;
+    }
+
+    p,
+    a {
+    	padding: 1.2em 0 1.2em;
+    }
+}

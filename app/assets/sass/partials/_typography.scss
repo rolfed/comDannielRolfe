@@ -1,0 +1,33 @@
+h1, 
+h2,
+h4,
+p {
+	font-family: $header;
+}
+h1 {
+	font-size: ms(1);
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: ms(1);
+}
+h2 {
+	font-size: ms(1);
+}
+h3 {
+	font-family: $paragraph;
+	font-size: ms(-1);
+	padding-top: 0.75em;
+}
+h4,
+p,
+a,
+i,
+i:before {
+	font-size: ms(0);
+}
+
+.introduction-text {
+	font-size: ms(2);
+}
+
+

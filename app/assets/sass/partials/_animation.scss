@@ -1,0 +1,48 @@
+#logo,
+.menu-item,
+.navbar-toggle,
+.introduction-text,
+.social-icons {
+    visibility: hidden;
+}
+.btn-arrow-circle-o-right {
+  display: none;
+}
+
+//Menu Animation
+.sliding {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+.sliding:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding:hover:after {
+  width: 100%;
+  background: $black;
+}
+.sliding-thin {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 15px;
+}
+.sliding-thin:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-thin:hover:after {
+  width: 100%;
+  background: $black;
+}
