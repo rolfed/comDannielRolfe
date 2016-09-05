@@ -29,9 +29,9 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/public' ));
-app.use('/public/js', express.static(__dirname + '/public/js'));
-app.use('/public/libs', express.static(__dirname + '/public/libs'));
-app.use('/public/css', express.static(__dirname + '/public/css'));
+//app.use('/public/js', express.static(__dirname + '/public/js'));
+//app.use('/public/libs', express.static(__dirname + '/public/libs'));
+//app.use('/public/css', express.static(__dirname + '/public/css'));
 
 // routes
 require('./app/routes')(app); // configure our routes
