@@ -1,7 +1,7 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
       <meta charset="utf-8">
@@ -11,7 +11,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
       <link rel="stylesheet" href="css/main.css">
+
+      <!-- jQuery -->
+      <script src="public/libs/jquery/dist/jquery.min.js"></script>
+
+      <!-- Bootstrap -->
+      <script src="public/libs/bootstrap-sass/assets/javascripts/bootstrap/bootstrap.min.js"></script>
+
+      <!-- Angular -->
+      <script src="public/libs/angular/angular.min.js"></script>
+      <script src="public/libs/angular-route/angular.route.min.js"></script>
+
+      <!-- Angular Customs -->
+      <script src="public/js/controllers/contactCtrl.js"></script>
+      <script src="public/js/controllers/mainCtrl.js"></script>
+      <script src="public/js/controllers/pageCtrl.js"></script>
+      <script src="public/js/controllers/portfolioCtrl.js"></script>
+      <script src="public/js/controllers/projectsCtrl.js"></script>
+      <script src="public/js/appRoutes.js"></script>
+      <script scr="public/js/app.js"></script>
+
+      <!-- GSAP -->
+      <script src="public/libs/gsap/src/minified/jquery.gsap.min.js"></script>
+      <script src="public/libs/gsap/src/minified/TweenMax.min.js"></script>
+
+      <!-- Adobe TypeKit -->
+      <script src="https://use.typekit.net/qaw2odv.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+      <!-- Main JS -->
+      <script src="js/main.js"></script>
     </head>
+
 <body ng-app="portfolioApp">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -24,26 +55,8 @@
    </div>
 <div ng-include='"partials/footer.html"'></div>
 
-<!-- jQuery -->
-<script src="public/libs/jquery/dist/jquery.min.js"></script>
 
-<!-- Bootstrap -->
-<script src="public/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<!-- Angular -->
-<script src="public/libs/angular/angular.min.js"></script>
-<script src="public/libs/angular-route/angular.route.min.js"></script>
-
-<!-- GSAP -->
-<script src="public/libs/gsap/src/minified/jquery.gsap.min.js"></script>
-<script src="public/libs/gsap/src/minified/TweenMax.min.js"></script>
-
-<!-- Adobe TypeKit -->
-<script src="https://use.typekit.net/qaw2odv.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-<!-- Main JS -->
-<script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -54,7 +67,6 @@
 
   ga('create', 'UA-83417720-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
 </html>
