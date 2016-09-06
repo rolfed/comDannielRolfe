@@ -2,10 +2,10 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     concat = require('gulp-concat'),
     compass = require('gulp-compass'),
-    minifyCSS = require('gulp-minify-css'),
     connect = require('gulp-connect'),
     jshint = require('gulp-jshint'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    cleanCSS = require('gulp-clean-css');
 
 var jsSrc = ['app/assets/js/*.js'],
     sassSrc = ['app/assets/**/*.scss'];
@@ -37,12 +37,17 @@ gulp.task('compass', function(){
             console.log(error);
             this.emit('end');
         })
-        .pipe(minifyCSS())
         .pipe(gulp.dest('public/css'))
 });
 
+gulp.task('minifyCSS', function(){
+    return gulp.src('public/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('public/css'));
+});
+
 gulp.task('watch', function(){
-    gulp.watch('app/assets/sass/**/*.scss', ['gulp-minify-css']);
+    gulp.watch('app/assets/sass/**/*.scss')
     gulp.watch(jsSrc, ['js']);
 });
 
@@ -53,4 +58,4 @@ gulp.task('start', function() {
     })
 });
 
-gulp.task('default', ['js', 'compass', 'watch', 'start']);
+gulp.task('default', ['js', 'compass','minifyCSS', 'watch', 'start']);
