@@ -1,6 +1,11 @@
-angular.module('portfolioApp', [
+var app = angular.module('portfolioApp', [
     'ngRoute',
-    'pageCtrl'
+    'appRoutes',
+    'pageCtril',
+    'contactCtrl',
+    'portfolioCtrl',
+    'processCtrl',
+    'projectsCtrl'
 
 ]);
 
