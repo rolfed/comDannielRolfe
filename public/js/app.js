@@ -1,1 +1,2 @@
-angular.module('portfolioApp', ['ngRoute', 'appRoutes', 'MainCtrl']);
+var app = angular.module('portfolioApp', ['ngRoute']);
+

@@ -42,7 +42,7 @@ gulp.task('compass', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('app/assets/sass/**/*.scss', ['minify-css']);
+    gulp.watch('app/assets/sass/**/*.scss', ['gulp-minify-css']);
     gulp.watch(jsSrc, ['js']);
 });
 
